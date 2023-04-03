@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/404.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="./images/icons/needle.png">
+   <title>Document</title>
+</head>
+<body>
+
+   <header class="header">
+      <nav>
+         <ul>
+            <li><a href="./index.html">Головна</a></li>
+            <li><a href="./pages/fabrics.html">Тканини</a></li>
+            <li><a href="./accessories.html">Фурнітура</a></li>
+            <li><a href="./pages/clothing_repair.html">Ремонт одягу</a></li>
+            <li><a href="./pages/contact.html">Контакти</a></li>
+         </ul>
+          
+         <div class="tel__num">
+            <a href="tel:098 904 3180" class="link__tel__num">&#x260F; 098 904 3180</a>
+         </div>
+
+         <div class="icon__img">
+            <a href="https://www.facebook.com/shveynyyugolok" class="social-links__item" data-network="facebook" target="_blank">
+               <img src="./images/icons/facebook.svg" alt="facebook">
+            </a> 
+         </div>
+
+       </nav>
+       <a href="#" class="menu-toggle">МЕНЮ</a>
+   </header>
+
+   <section class="page_404">
+         <div class="container">
+            <h1 class="text-center ">404</h1>
+            <div class="four_zero_four_bg">
+            </div>
+         
+            <div class="contant_box_404">
+               <h3> Щось пішло не по плану...</h3>
+               <a href="./index.html" class="link_404">Повернутись на головну сторінку</a>
+            </div>
+         </div>
+   </section>
+
+   
+ <footer>
+	<div class="footer-container">
+	  <div class="footer-block">
+		 <ul>
+			<li><a href="./index.html">Головна</a></li>
+			<li><a href="./pages/fabrics.html" target="_blank">Тканини</a></li>
+			<li><a href="./accessories.html" target="_blank">Фурнітура</a></li>
+			<li><a href="./pages/clothing_repair.html" target="_blank">Ремонт одягу</a></li>
+			<li><a href="./pages/contact.html">Контакти</a></li>
+		 </ul>
+	  </div>
+
+	  <div class="footer-block">
+		 <h4>Швейний куточок</h4>
+		 <p>Наше ательє - це професійний сервіс, що надає послуги по ремонту та модифікації одягу.</p>
+	  </div>
+
+	  <div class="footer-block">
+		 <h4>Соціальні мережі</h4>
+
+		 <div class="icon__img">
+			<a href="https://www.facebook.com/shveynyyugolok" class="social-links__item" data-network="facebook" target="_blank">
+				<img src="./images/icons/facebook.svg" alt="facebook">
+			</a> 
+		</div>
+
+	  </div>
+	</div>
+	<p class="footer-copy">&copy; 2023 Швейний куточок</p>
+ </footer>
+
+	<script>
+
+			$(function() { //запуск JQuery
+				$('.menu-toggle').click(function() {
+					$('nav').toggleClass('active');
+				})
+			});
+   	</script>
+</body>
+</html>

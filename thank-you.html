@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./thank-you.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	  <link rel="icon" type="image/x-icon" href="./images/icons/needle.png">
+    <title>Швейний куточок</title>
+  </head>
+
+  <body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="./home.html">Головна</a></li>
+        <li><a href="./pages/fabrics.html" target="_blank">Тканини</a></li>
+        <li><a href="./accessories.html" target="_blank">Фурнітура</a></li>
+        <li><a href="./pages/clothing_repair.html" target="_blank">Ремонт одягу</a></li>
+        <li><a href="./pages/contact.html">Контакти</a></li>
+      </ul>
+       
+      <div class="tel__num">
+        <a href="tel:+380442295857" class="link__tel__num">&#x260F; 098 904 3180</a>
+      </div>
+
+      <div class="icon__img">
+        <a href="https://www.facebook.com/shveynyyugolok" class="social-links__item" data-network="facebook">
+          <img src="./images/icons/facebook.svg" alt="facebook">
+        </a> 
+      </div>
+      
+     </nav>
+     <a href="#" class="menu-toggle">МЕНЮ</a>
+ 
+  </header>
+   <main>
+
+     <div class="container">
+       <h1 >Дякуємо!</h1>
+       <h2>Ваша заявка на консультацію буде розглянута найближчим часом.</h2>
+       <h2>Гарного Вам дня.</h2>
+     </div>
+   </main>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-block">
+         <ul>
+          <li><a href="home.html">Головна</a></li>
+          <li><a href="./pages/fabrics.html" target="_blank">Тканини</a></li>
+          <li><a href="accessories.html" target="_blank">Фурнітура</a></li>
+          <li><a href="./pages/clothing_repair.html" target="_blank">Ремонт одягу</a></li>
+          <li><a href="./pages/contact.html">Контакти</a></li>
+         </ul>
+        </div>
+    
+        <div class="footer-block">
+         <h4>Швейний куточок</h4>
+         <p>Наше ательє - це професійний сервіс, що надає послуги по ремонту та модифікації одягу.</p>
+        </div>
+    
+        <div class="footer-block">
+         <h4>Соціальні мережі</h4>
+    
+         <div class="icon__img">
+          <a href="https://www.facebook.com/shveynyyugolok" class="social-links__item" data-network="facebook" target="_blank">
+            <img src="./images/icons/facebook.svg" alt="facebook">
+          </a> 
+        </div>
+    
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2023 Швейний куточок</p>
+     </footer>
+     <script>
+      	$(function() { //запуск JQuery
+				$('.menu-toggle').click(function() {
+					$('nav').toggleClass('active');
+				})
+			});
+     </script>
+  </body>
+</html>

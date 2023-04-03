@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/clothing_repaire.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="../images/icons/needle.png">
+   <title>Швейний куточок</title>
+</head>
+<body onload="getWeather(), exchangeRate()">
+	
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="../pages/fabrics.html" target="_blank">Тканини</a></li>
+        <li><a href="../accessories.html" target="_blank">Фурнітура</a></li>
+        <li><a href="./clothing_repair.html" target="_blank" class="active__page">Ремонт одягу</a></li>
+        <li><a href="../pages/contact.html">Контакти</a></li>
+      </ul>
+       
+      <div class="tel__num">
+        <a href="tel:098 904 3180" class="link__tel__num">&#x260F; 098 904 3180</a>
+      </div>
+
+      <div class="icon__img">
+        <a href="https://www.facebook.com/shveynyyugolok" class="social-links__item" data-network="facebook">
+          <img src="../images/icons/facebook.svg" alt="facebook">
+        </a> 
+      </div>
+    
+      <div class="weather__block">
+        <div id="out" style="display: none;">
+          <div><span id="citiId">Запоріжжя</span></div>
+          <div>+ <span id="feelsId"></span></div>
+         </div>
+         
+         <div id="out2">
+          <div id="outError" style="display: none;">Error</div>
+          <img src="" id="weaterImg" class="icon">
+         </div>
+        
+      </div>
+      
+      <table class="table table-dark">
+        <thead>
+          <tr>
+          <th></th>
+           <th scope="col">Купівля</th>
+           <th scope="col">Продаж</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td id="valUSD"></td>
+           <td id="buyUSD"></td>
+           <td id="saleUSD"></td>
+          
+          </tr>
+          <tr>
+          <td id="valEUR"></td>
+          <td id="buyEUR"></td>
+          <td id="saleEUR"></td>
+          </tr>
+        </tbody>
+       </table>
+       
+     </nav>
+     <a href="#" class="menu-toggle">МЕНЮ</a>
+
+  </header>
+
+  <div class="container">
+      <div class="cta">
+          <img src="../images/page4/zipper.jpg" alt="Zipper">
+          <div class="text">
+            <h2>Заміна блискавки</h2>
+            <p>Штани, спідниці, курточки та кофти, має блискавку, оскільки цей механізм забезпечує зручний спосіб застібання. Однак, блискавка може бути слабкою ланкою, і часто трапляється, що вона ламається незабаром після покупки.</p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <img src="../images/page4/Leather-Jacket.jpg" alt="Leather Jacket">
+          <div class="text">
+            <h2>Ремонт виробів із шкіри та трикотажу</h2>
+            <p>Зі шкіри та трикотажу виготовляються різні види одягу, які можуть зазнавати пошкоджень з часом. Проте, не варто відмовлятися від улюблених речей, адже їх можна відновити зберігаючи його оригінальний вигляд та довговічність.</p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <img src="../images/page4/leather-coat.jpg" alt="Leather coat">
+          <div class="text">
+            <h2>Фарбування шкіряних виробів</h2>
+            <p>При зношенні, дефектах та втраті кольору, бажання освіжити шкфриняй одяг виникає само собою. Проте, самостійне фарбування часто не дає очікуваного результату. Ймовірно, багато людей відкидають старі зношені речі, але їх можна легко відновити.</p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <img src="../images/page4/swimsuit.jpg" alt="Swimsuit">
+          <div class="text">
+            <h2>Ремонт купальників</h2>
+            <p>Пляжний одяг є важливою складовою літнього гардеробу, однак послуги з ремонту купальників користуються попитом у будь-яку пору року. Професійні майстри з ремонту купальників зможуть відновити Вашу улюблену річ, зберігаючи її форму та стиль. </p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <img src="../images/page4/knopki.jpg" alt="knopka">
+          <div class="text">
+            <h2>Встановлення кнопок</h2>
+            <p>Встановлення кнопок - це простий і популярний спосіб з'єднати дві тканини або закріпити деталь на одязі. Для цього використовують спеціальні кнопки та преси, які дозволяють закріпити кнопки на тканині. </p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <img src="../images/page4/bed-linen.jpg" alt="Bed linen">
+          <div class="text">
+            <h2>Пошиття та перешив постільної білизни</h2>
+            <p>Пошиття постільної білизни - це процес створення високоякісних та комфортних ліжковин, наволочок та простирадел. Для пошиття використовуються різні тканини, такі як бавовна, лляна, шовк, сатин та інші. </p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <img src="../images/page4/jalousie.jpg" alt="Jalousie">
+          <div class="text">
+            <h2>Обробка штор та гардин</h2>
+            <p>Обробка штор та гардин - це важлива складова їх дизайну і функціональності. Зазвичай обробляють верхню кромку штор або гардин, щоб закінчити їх вигляд і додати до них додаткову приємність в естетичному вигляді.</p>
+          </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-block">
+         <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="../pages/fabrics.html">Тканини</a></li>
+          <li><a href="../accessories.html">Фурнітура</a></li>
+          <li><a href="../pages/clothing_repair.html">Ремонт одягу</a></li>
+          <li><a href="../pages/contact.html">Контакти</a></li>
+         </ul>
+        </div>
+    
+        <div class="footer-block">
+         <h4>Швейний куточок</h4>
+         <p>Наше ательє - це професійний сервіс, що надає послуги по ремонту та модифікації одягу.</p>
+        </div>
+    
+        <div class="footer-block">
+         <h4>Соціальні мережі</h4>
+    
+         <div class="icon__img">
+          <a href="https://www.facebook.com/shveynyyugolok" class="social-links__item" data-network="facebook" target="_blank">
+            <img src="../images/icons/facebook.svg" alt="facebook">
+          </a> 
+        </div>
+    
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2023 Швейний куточок</p>
+     </footer>
+	
+   <script src="../js/clothing.js"></script>
+  <script>
+
+    $(function() {
+         $('.menu-toggle').click(function() {
+            $('nav').toggleClass('active');
+         })
+      });
+</script>
+</body>
+</html>
+
